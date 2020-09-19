@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap");
+
+.phonebook {
+  position: relative;
+  background-size: cover;
+  width: 25%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Teko", sans-serif;
+  overflow: hidden;
+}
+
+button {
+  border: none;
+}
+.details,
+h2 {
+  font-size: 35px;
+  color: black;
+}
+ul {
+  padding: 0;
+  width: 80%;
+  list-style: square;
+}
+li {
+  color: black;
+  border-bottom: 1px solid black;
+}
+.details {
+  width: 60%;
+  font-size: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+.details:nth-child(1) {
+  border-bottom: none;
+}
+.addContactBtn {
+  background: transparent;
+  background-color: rgba(17, 236, 61, 0.712);
+  height: 33px;
+  font-family: "Teko", sans-serif;
+  outline: none;
+  display: block;
+  width: 120px;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+.submitForm {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 75%;
+  justify-content: space-between;
+  align-items: center;
+}
+.contactDetails {
+  color: black;
+}
+.contactName {
+  margin-right: 5px;
+  width: 40%;
+}
+.removeButton {
+  font-family: "Teko", sans-serif;
+  float: right;
+  background-color: rgba(255, 0, 0, 0.514);
+  color: black;
+  font-size: 13px;
+  outline: none;
+}
+.removeButton,
+.details,
+.addContactBtn {
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-radius: 15px;
+}
+.formDescription {
+  color: black;
+}
+.searchForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  background: transparent;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 15px;
+  border-top: none;
+  color: black;
+  height: 30px;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  padding-left: 17px;
+  outline: none;
+}
+@media (max-width: 1000px) {
+  .phonebook {
+    width: 90%;
+  }
+}
